@@ -1,0 +1,15 @@
+<div class="container mx-auto mt-5">
+    <h1 class="text-2xl font-bold mb-5">Add New Contact</h1>
+    <form (ngSubmit)="addContact()">
+      <div class="mb-4">
+        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" id="name" [(ngModel)]="contact.name" name="name" class="mt-1 block w-full" required>
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="email" [(ngModel)]="contact.email" name="email" class="mt-1 block w-full" required>
+      </div>
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Add Contact</button>
+    </form>
+  </div>
+  
